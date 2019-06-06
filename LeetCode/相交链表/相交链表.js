@@ -46,7 +46,7 @@ var buildList2 = function(head){
     return node1
 }
 
-
+// 如果有相交，最终路径相等 x1+y+x2 = x2+y+x1
 var getIntersectionNode = function(headA, headB) {
     var p = headA
     var q = headB
