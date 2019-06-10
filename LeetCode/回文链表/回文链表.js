@@ -32,6 +32,7 @@ var buildList = function(){
     return node1
 }
 
+// 先找到中间结点，反转后半段，依次比较
 var isPalindrome = function(head) {
     if (head == null || head.next == null) {
         return true
