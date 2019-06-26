@@ -31,14 +31,13 @@ function buildTree() {
     return node1
 }
 
+// 递归，深度搜索，查找子节点
 var leafSimilar = function(root1, root2) {
     let res1 = []
     let res2 = []
 
     similarSet(root1, res1)
     similarSet(root2, res2)
-
-    console.log(res1, res2)
 
     if (res1.length != res2.length) {
         return false
