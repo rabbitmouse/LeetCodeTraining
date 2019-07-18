@@ -9,7 +9,7 @@
 *3 -> 拼接列表 attachLists(addedLists, count)
     *3-1 -> 分配内存 oldcount + newcount
     *3-2 -> 内存移动 把原来列表中的方法移动到[newcount]
-            [[],[],[],[原来第一个元素],[原来第二个元素]]
+            [nil,nil,nil,[原来第一个元素],[原来第二个元素]]
     *3-2 -> 内存拷贝，将newlists拷贝到原列表中
             [A, B, C,[原来第一个],[原来第二个]]
 */
