@@ -253,6 +253,7 @@ switch score {
 
 /*原始值
     枚举成员可以使用相同类型的默认值预先关联
+    本质是计算属性
 */
 enum PokerSuit : Character {
     case spade = "♠️"
@@ -544,3 +545,99 @@ func fn() -> () -> () {
     }
     return fn1
 }
+
+/*
+属性
+    存储属性
+        类似于成员变量
+        存储在实例内存中
+        结构体、类可以定义存储属性
+        枚举不可以定义存储属性
+
+        创建时必须设置初始值
+            1.可以在初始化器里面为存储属性设置值
+            2.可以分配一个默认值
+    计算属性
+        本质是方法
+        不占用实例内存
+        枚举、结构体、类都可以定义计算属性
+
+        set传入的新值默认叫newValue，也可以自定义
+        只读计算属性：只有get，没有set
+*/
+struct Circle {
+    // 存储属性
+    var redius: Double
+    // 计算属性
+    var diameter: Double {
+        set(newValue) {
+            radius = newValue / 2
+        }
+        get {
+            radius * 2
+        }
+    }
+}
+
+struct Circle {
+    // 存储属性
+    var redius: Double
+    // 只读计算属性
+    var diameter: Double { radius * 2 }
+}
+
+
+/*
+延迟存储属性
+    lazy 属性只能是var
+    如果多条线程同时第一次访问lazy属性
+        无法保证属性只被初始化1次
+*/
+
+class Car {
+    init() {
+
+    }
+    func run() {
+
+    }
+}
+
+class Person {
+    lazy var car = Car()
+
+    func goOut() {
+        car.run
+    }
+}
+
+class PhotoView {
+    lazy var image: Image = {
+        let url = "http://xx/xx.png"
+        let data = Data(url: url)
+        return Image(data: data)
+    }()
+}
+
+/*
+属性观察期
+    为非lazy的var存储属性设置属性观察器
+*/
+struct Circle {
+    var radius: Double {
+        willSet {
+            print("willSet", newValue)
+        }
+        didSet {
+            print("didSet", oldValue, radius)
+        }
+    }
+    init() {
+        self.radius = 1.0
+    }
+}
+
+/*
+全局变量，局部变量
+    属性观察器，计算属性，也可以用到全局变量，局部变量上
+*/
