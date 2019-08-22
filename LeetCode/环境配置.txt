@@ -1,0 +1,57 @@
+命令行：
+    homebrew : https://brew.sh/
+    item2 + oh my zsh : https://www.jianshu.com/p/405956cdaca6
+开发环境：
+    Xcode
+    vscode
+        TSLint
+        ESLint
+        React Native Snippet
+        Bracket Pair Colorizer
+    node : https://www.jianshu.com/p/a0bd0059f6d8
+        rvm : 
+    ruby : brew install ruby
+        nvm : https://github.com/nvm-sh/nvm/blob/master/README.md#installation-and-update
+    yarn : brew install yarn
+    watchman : brew install watchman
+    react-native-cli : npm install -g react-native-cli
+    Cocoapods : https://www.jianshu.com/p/9e4e36ba8574
+
+    Redux：yarn add redux
+	react-redux: yarn add react-redux
+	redux-devtolls: sudo npm install -g react-devtools --unsafe-perm=true --allow-root
+软件：
+    Charles : https://www.jianshu.com/p/9f4ebde9c518
+    SrouceTree
+    Chrome
+    QQ
+    WX
+    有道
+
+Git:
+    1. 从fork的仓库，克隆仓库
+$ git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git
+
+2. 查看，配置上游仓库
+$ git remote -v
+    > origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+    > origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+$ git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+$ git remote -v
+    > origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+    > origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+    > upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+    > upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+
+3. 给本地分支设置上游分支
+    切到新分支，并设置上游分支
+    $ git checkout -b branchname --track upstream/branchname
+
+    设置当前分支的上游分支
+    $ git branch --set-upstream-to=upstream/2.13.0-publish-branch
+
+4. 推送和拉去
+    >从upstream拉去最新代码
+    $git pull 
+    >向自己的远端仓库推送代码
+    $git push origin
