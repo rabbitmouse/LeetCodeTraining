@@ -55,3 +55,15 @@ $ git remote -v
     $git pull 
     >向自己的远端仓库推送代码
     $git push origin
+
+其他命令：
+清除端口进程
+sudo lsof -i :8081
+sudo kill -9 61342
+
+打包Android apk
+./gradlew iSD 
+
+> not found config.h
+$ cd node_modules/react-native/third-party/glog-0.3.4
+../../scripts/ios-configure-glog.sh
