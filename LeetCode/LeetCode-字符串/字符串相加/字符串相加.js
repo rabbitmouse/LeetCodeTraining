@@ -29,4 +29,4 @@ var addStrings = function(num1, num2) {
     return str.reverse().join('')
 };
 
-console.log(addStrings("123", "111"))
+console.log(addStrings("1213", "111"))
