@@ -8,26 +8,44 @@
         ESLint
         React Native Snippet
         Bracket Pair Colorizer
+	Bazel
+	Code Runner
+	EditorConfig for VS Code
+	ES7 React/Redux/GraphQL/React-Native....
+	GitLens-Git supercharged
+	HTML CSS Support
+	HTML Snippets
+	One plain
+	Prettier - code formatter
+	Vetur
+	Vue
+	Vue 2 Snippets
+	Vue VSCode Snippets
+
     node : https://www.jianshu.com/p/a0bd0059f6d8
-        rvm : 
+    rvm : 
     ruby : brew install ruby
-        nvm : https://github.com/nvm-sh/nvm/blob/master/README.md#installation-and-update
+    nvm : https://github.com/nvm-sh/nvm/blob/master/README.md#installation-and-update
     yarn : brew install yarn
     watchman : brew install watchman
     react-native-cli : npm install -g react-native-cli
     Cocoapods : https://www.jianshu.com/p/9e4e36ba8574
+    nrm: npm install -g nrm
 
     Redux：yarn add redux
 	react-redux: yarn add react-redux
 	redux-devtolls: sudo npm install -g react-devtools --unsafe-perm=true --allow-root
 软件：
     Charles : https://www.jianshu.com/p/9f4ebde9c518
-    SrouceTree
+    Clash 翻墙
     Chrome
     QQ
     WX
+    企业WX
     有道
-
+    Xcode
+    Android studio
+ 
 Git:
     1. 从fork的仓库，克隆仓库
 $ git clone https://github.com/YOUR_USERNAME/YOUR_FORK.git
