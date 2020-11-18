@@ -17,7 +17,6 @@ var canCompleteCircuit = function(gas, cost) {
             idx = i + 1
         }
     }
-
     return spare >= 0 ? idx : -1
 };
 
