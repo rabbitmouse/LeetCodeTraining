@@ -1,6 +1,12 @@
 命令行：
     homebrew : https://brew.sh/
     item2 + oh my zsh : https://www.jianshu.com/p/405956cdaca6
+
+VPN:
+    web: https://pucloud.co/auth/login
+    config: https://baipiao-rss.com/link/FSfjexNAsWf5hWfQ?clash=1
+    clash下载: https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public
+
 开发环境：
     Xcode
     vscode
